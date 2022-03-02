@@ -1,6 +1,6 @@
 # Vefforritun 2, 2022. Verkefni 4: Viðburðakerfis framendi
 
-[Kynning á verkefni í tíma](https://youtu.be/).
+[Kynning á verkefni í tíma](https://youtu.be/Sc0vW-5zylM).
 
 Verkefnið er endurgerð á [verkefni 2](https://github.com/vefforritun/vef2-2022-v2/) með React og nýtir vefþjónustur úr [verkefni 3](https://github.com/vefforritun/vef2-2022-v3/).
 
