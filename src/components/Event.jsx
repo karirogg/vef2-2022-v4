@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 
 export function Event({ loggedIn }) {
   const [comment, setComment] = useState('');
   const [registrations, setRegistrations] = useState([]);
   const [event, setEvent] = useState({});
 
-  const { id: eventID } = useParams();
+  //const { id: eventID } = useParams();
 
   useEffect(() => {
     async function fetchData() {
