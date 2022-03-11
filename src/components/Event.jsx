@@ -10,9 +10,7 @@ export function Event({ loggedIn }) {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await fetch(
-        `http://vef2-v3-kari.herokuapp.com/events/${eventID}`
-      );
+      const result = await fetch(`http://vef2-v3-kari.herokuapp.com/events/1`);
 
       const { event, registrations } = await result.json();
 
