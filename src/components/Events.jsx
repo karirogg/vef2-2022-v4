@@ -5,7 +5,7 @@ export function Events() {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await fetch('http://vef2-v3-kari.herokuapp.com/events/');
+      const result = await fetch('https://vef2-v3-kari.herokuapp.com/events/');
 
       const events = await result.json();
 
