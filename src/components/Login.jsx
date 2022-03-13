@@ -4,18 +4,18 @@ import { Button } from './Button';
 
 export const Login = ({ loggedIn, setLoggedIn }) => {
   return (
-    <React.Fragment>
+    <div className="user">
       {loggedIn ? (
-        <div>
-          <p>Skráð/ur inn sem: Admin</p>
+        <React.Fragment>
+          <p className="user__loggedIn">Skráð/ur inn sem: test</p>
           <Button onClick={() => setLoggedIn(false)}>Útskráning</Button>
-        </div>
+        </React.Fragment>
       ) : (
-        <div>
+        <React.Fragment>
           <Link to="/login">Skrá inn</Link>
           <Button onClick={() => setLoggedIn(true)}>Nýskráning</Button>
-        </div>
+        </React.Fragment>
       )}
-    </React.Fragment>
+    </div>
   );
 };
