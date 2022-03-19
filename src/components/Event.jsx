@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { formatDate } from '../utils/help-functions';
 import { Button } from './Button';
 
 export function Event({ loggedIn }) {
@@ -42,7 +43,7 @@ export function Event({ loggedIn }) {
       <div className="event__info">
         <p>{event.description}</p>
         <p>
-          Viðburður búinn til: {event.created} af {event.creator}
+          Viðburður búinn til: {formatDate(event.created)} af {event.creator}
         </p>
       </div>
       <ul className="event__registered">
